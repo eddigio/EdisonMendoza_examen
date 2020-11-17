@@ -20,6 +20,9 @@ namespace EdisonMendoza_examen
             string user = txtuser.Text;
             string pass = txtpass.Text;
 
+            //definicion de varicaciones
+            string user_val = "estudiante2020";
+            string pass_val = "uisrael2020";
             await Navigation.PushAsync (new Ventana_dos(user,pass));
         }
     }
