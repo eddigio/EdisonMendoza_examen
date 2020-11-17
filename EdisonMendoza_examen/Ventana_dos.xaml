@@ -4,13 +4,30 @@
              x:Class="EdisonMendoza_examen.Ventana_dos">
     <ContentPage.Content>
         <StackLayout>
-            <Label Text="ventana dos REGISTRO" 
+            <Label Text="ventana dos REGISTRO" HorizontalTextAlignment="Center" FontSize="20" TextColor="Blue"
                  />
             <Label x:Name="lbUser">
                 
             </Label>
-            <Entry  x:Name="txtpass">
-                </Entry>
+            <Entry  x:Name="txtpass" >
+                
+            </Entry>
+            <Entry x:Name="txtdato1" Placeholder="Ingrese su nombre" Keyboard="Text"
+                   ></Entry>
+            <Entry x:Name="txtdato2" Placeholder="Monto Inicial" Keyboard="Numeric"
+                   ></Entry>
+            <Entry x:Name="txtdato3" Placeholder="Pago Mensual" IsReadOnly="True"
+                   ></Entry>
+
+            <Entry x:Name="txtResultado" IsReadOnly="True"></Entry>
+            <Button  x:Name="btnCalcular"
+                     Text="Calcular"
+                     Clicked="btnCalcular_Clicked"></Button>
+
+
+
+
+
         </StackLayout>
     </ContentPage.Content>
 </ContentPage>

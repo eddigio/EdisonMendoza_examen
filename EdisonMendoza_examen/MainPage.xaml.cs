@@ -24,6 +24,8 @@ namespace EdisonMendoza_examen
             string user_val = "estudiante2020";
             string pass_val = "uisrael2020";
             await Navigation.PushAsync (new Ventana_dos(user,pass));
+
+
         }
     }
 }

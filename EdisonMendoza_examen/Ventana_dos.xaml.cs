@@ -19,5 +19,16 @@ namespace EdisonMendoza_examen
             txtpass.Text = pass;
 
         }
+
+        private void btnCalcular_Clicked(object sender, EventArgs e)
+        {
+            double dato1 = Convert.ToDouble(txtdato1.Text);
+            double dato2 = Convert.ToDouble(txtdato2.Text);
+            double montoInicial = (1800 - dato2);
+            double pagoMensual = ((montoInicial / 3)*0.5);
+            txtResultado.Text = pagoMensual.ToString();
+            
+            
+        }
     }
 }
